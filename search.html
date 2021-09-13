@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Search</title>
+</head>
+<body>
+
+<div class="page" id="page">
+    <!-- Header -->
+    <header class="header">
+        <div class="header__left">
+            <nav class="nav">
+                <ul class="nav__list">
+                   <li class="nav__item">
+                      <a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link  has-subnav" href="#">Связь</a>
+                        
+                        <ul class="subnav">
+                           <li>
+                               <a class="subnav__link" data-modal="vopros-modal" href="#">Задать вопрос</a>
+                            </li>
+                            <li>
+                               <a class="subnav__link" href="chastvopr.html">Часто задаваемые вопросы</a>
+                            </li>
+                            <li>
+                               <a class="subnav__link" data-modal="pred-modal"href="#">Пожелания и предложения</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="region.html">Регион</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="proff.html">Профессия</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="lich.html">Личность</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <button class="burger" type="button" id="sidebarToggle">
+                <span>Открыть навигацию</span>
+            </button>
+            
+        </div>
+        <div class="header__right">
+        <nav class="nav">
+                <ul class="nav__list">
+                   <li class="nav__item">
+                      <a class="nav__link" href="profile.html">Личный кабинет</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#">Выход</a>
+                    </li>
+                </ul>
+            </nav>
+            <form class="search "action="search.html" method="get">
+                <input class="search__input" type="text" placeholder="Поиск по сайту">
+            </form>
+        </div>
+    </header>
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+       
+        
+        <div class="sidebar__content">
+            <div class="profile">
+                <div class="profile__header">
+                   <img class="profile__avatar" src="assets/images/gerb.png" alt="">
+                   <div class="profile__name">Региональный профориентационный интеренет-портал</div>
+                   <div class="profile__prof">"Регион-Профессия-Личность"</div>
+                </div>
+                
+                
+                <ul class="social">
+                   <li class="social__item">
+                       <a class="social__link" href="#" target="_blank">
+                           <img src="assets/images/vk.svg" alt="Сообщество VK">
+                       </a>
+                    </li>
+                     <li class="social__item">
+                       <a class="social__link" href="#" target="_blank">
+                           <img src="assets/images/YouTube.svg" alt="Канал YouTube">
+                       </a>
+                    </li>
+                </ul>
+                
+                <div class="profile__text">
+                    <p>Крупнейший региональный профориентационный интернет-портал в Воронежской области</p>
+                </div>
+            </div> <!-- /profile -->
+            
+             <nav class="nav  nav--mobile">
+                <ul class="nav__list">
+                   <li class="nav__item">
+                      <a class="nav__link" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link  has-subnav" href="#">Опрос</a>
+                        
+                        <ul class="subnav">
+                           <li>
+                               <a class="subnav__link" href="#">Задать вопрос</a>
+                            </li>
+                            <li>
+                               <a class="subnav__link" href="text.html">Часто задаваемые вопросы</a>
+                            </li>
+                            <li>
+                               <a class="subnav__link" href="#">Пожелания и предложения</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="text.html">Регион</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="text.html">Профессия</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="text.html">Личность</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="profile.html">Личный кабинет</a>
+                    </li>
+                    <li class="nav__item">
+                      <a class="nav__link" href="#">Выйти</a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </div> <!-- /sideber__content -->
+            <div class="sidebar__footer"> 
+                <a class="btn  btn--red" data-modal="podd-modal" href="#">Техподдержка</a>
+                <button class="btn  btn--blue" type="button" data-modal="contact-modal">Контакты</button>
+            </div>
+    </aside>    
+    <aside class="sidebar-2" id="sidebar-2">
+        <p class="sidebar-2__image">
+        <img src="assets/images/karera.png">
+      </p>
+        <p class="sidebar-2__image">
+        <img src="assets/images/budu.png">
+      </p>
+         <p class="sidebar-2__image">
+        <img src="assets/images/worlds.png">
+      </p>
+        <p class="sidebar-2__image">
+        <img src="assets/images/proek.png">
+      </p>
+    </aside>
+            <!-- Main -->
+    <main class="main">
+        <div class="container">
+            
+            
+            <h1 class="page__title">Результаты поиска "Образование"</h1>
+            
+            <article class="post">
+                <div class="post__content">
+                    <h2 class="post__title">
+                       <a href="post.html">Что-то про образование</a>
+                    </h2>
+                    <p class="post__description">Текст текст текст текст текст текст какой то текст здесь написан какой то текст какой то текст здесь будет написан, так как это новость или статья</p>
+                </div>
+                
+                <div class="post__footer">
+                    <ul class="post__data">
+                       <li class="post__data-item">
+                          <time datetime="2021-06-21 19:30">21.06.2021</time> 
+                       </li>
+                        <li class="post__data-item">
+                           <a href="post.html">Образование</a>    
+                        </li>
+                    </ul>
+                    
+                    <a class="post__read" href="post.html">Перейти</a>
+                </div>
+            </article> <!-- /.post -->
+            
+            <article class="post">
+                <div class="post__content">
+                    <h2 class="post__title">
+                       <a href="post.html">Что-то про образование</a>
+                    </h2>
+                    <p class="post__description">Текст текст текст текст текст текст какой то текст здесь написан какой то текст какой то текст здесь будет написан, так как это новость или статья</p>
+                </div>
+                
+                <div class="post__footer">
+                    <ul class="post__data">
+                       <li class="post__data-item">
+                          <time datetime="2021-06-21 19:30">21.06.2021</time> 
+                       </li>
+                        <li class="post__data-item">
+                           <a href="post.html">Образование</a>    
+                        </li>
+                    </ul>
+                    
+                    <a class="post__read" href="post.html">Перейти</a>
+                </div>
+            </article> <!-- /.post -->
+            
+            <article class="post">
+                <div class="post__content">
+                    <h2 class="post__title">
+                       <a href="post.html">Что-то про образование</a>
+                    </h2>
+                    <p class="post__description">Текст текст текст текст текст текст какой то текст здесь написан какой то текст какой то текст здесь будет написан, так как это новость или статья</p>
+                </div>
+                
+                <div class="post__footer">
+                    <ul class="post__data">
+                       <li class="post__data-item">
+                          <time datetime="2021-06-21 19:30">21.06.2021</time> 
+                       </li>
+                        <li class="post__data-item">
+                           <a href="post.html">Образование</a>    
+                        </li>
+                    </ul>
+                    
+                    <a class="post__read" href="post.html">Перейти</a>
+                </div>
+            </article> <!-- /.post -->
+        </div>
+    </main>
+    <main class="main">
+        <div class="container">
+        </div>
+    </main>
+</div>
+    
+    <div class="modal" id="podd-modal">
+        <div class="modal__content  modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">        
+            </button>
+            <form class="form" action="/" method="post">
+        <div class="form__group  form__group--md">
+            <input class="form__control" type="text" placeholder="Ваше имя">
+            <span class="form__line"></span>
+        </div>
+                
+        <div class="form__group  form__group--md">
+            <input class="form__control" type="email" placeholder="Ваша почта">
+            <span class="form__line"></span>
+        </div>
+        
+        <div class="form__group  form__group--md">
+            <textarea class="form__control  form__control--textarea" placeholder="Напишите нам" name=""></textarea>
+            <span class="form__line"></span>
+        </div>
+        
+        
+        <div class="form__footerr">
+            <div class="form__group  form__group--md">
+                <button class="btn  btn--blue  btn--rounded  btn--sm" type="submit">Отправить</button>
+            </div>
+        </div>  
+    </form>
+    
+    <ul class="modal__footer">
+        <li>
+            e-mail:
+            <a href="mailto:derkachevigor1997@mail.ru">derkachevigor1997@mail.ru</a>
+        </li>
+    </ul>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <div class="modal" id="contact-modal">
+        <div class="modal__content  modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">        
+            </button>
+            <form class="form" action="/" method="post">
+        <div class="form__group  form__group--md">
+            <input class="form__control" type="text" placeholder="Ваше имя">
+            <span class="form__line"></span>
+        </div>
+                
+        <div class="form__group  form__group--md">
+            <input class="form__control" type="email" placeholder="Ваша почта">
+            <span class="form__line"></span>
+        </div>
+        
+        <div class="form__group  form__group--md">
+            <textarea class="form__control  form__control--textarea" placeholder="Текст сообщения" name=""></textarea>
+            <span class="form__line"></span>
+        </div>
+        
+        
+        <div class="form__footerr">
+            <div class="form__group  form__group--md">
+                <button class="btn  btn--blue  btn--rounded  btn--sm" type="submit">Отправить</button>
+            </div>
+        </div>  
+    </form>
+    
+    <ul class="modal__footer">
+        <li>
+            e-mail:
+            <a href="mailto:derkachevigor1997@mail.ru">derkachevigor1997@mail.ru</a>
+        </li>
+        <li>
+            тел: 
+            <a href="tel:+79102484540">+7-910-248-45-40</a>
+        </li>
+    </ul>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <div class="modal">
+        <div class="modal__content">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">        
+            </button>
+            
+            <ul class="social">
+                   <li class="social__item">
+                       <a class="social__link" href="#">
+                           <img src="assets/images/share/facebook.svg" alt="">
+                       </a>
+                    </li>
+                     <li class="social__item">
+                       <a class="social__link" href="#">
+                           <img src="assets/images/share/twitter.svg" alt="">
+                       </a>
+                    </li>
+                
+                    <li class="social__item">
+                       <a class="social__link" href="#">
+                           <img src="assets/images/share/vk.svg" alt="">
+                       </a>
+                    </li>   
+                    
+                    <li class="social__item">
+                       <a class="social__link" href="#">
+                           <img src="assets/images/share/copy.svg" alt="">
+                       </a>
+                    </li>
+                    
+                </ul>
+            
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <div class="modal" id="pred-modal">
+        <div class="modal__content  modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">        
+            </button>
+            <form class="form" action="/" method="post">
+        <div class="form__group  form__group--md">
+            <input class="form__control" type="text" placeholder="Ваше имя">
+            <span class="form__line"></span>
+        </div>
+                
+        <div class="form__group  form__group--md">
+            <textarea class="form__control  form__control--textarea" placeholder="Ваши пожелания и предложения" name=""></textarea>
+            <span class="form__line"></span>
+        </div>
+        
+        
+        <div class="form__footerr">
+            <div class="form__group  form__group--md">
+                <button class="btn  btn--blue  btn--rounded  btn--sm" type="submit">Отправить</button>
+            </div>
+        </div>  
+    </form>
+    
+    <ul class="modal__footer">
+        <li>
+            e-mail:
+            <a href="mailto:derkachevigor1997@mail.ru">derkachevigor1997@mail.ru</a>
+        </li>
+    </ul>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    <div class="modal" id="vopros-modal">
+        <div class="modal__content  modal__content--contact">
+            <button class="modal__close" type="button">
+                <img src="assets/images/close.svg" alt="Закрыть">        
+            </button>
+            <form class="form" action="/" method="post">
+        
+        <div class="form__group  form__group--md">
+            <textarea class="form__control  form__control--textarea" placeholder="Задать вопрос" name=""></textarea>
+            <span class="form__line"></span>
+        </div>
+        
+        
+        <div class="form__footerr">
+            <div class="form__group  form__group--md">
+                <button class="btn  btn--blue  btn--rounded  btn--sm" type="submit">Отправить</button>
+            </div>
+        </div>  
+    </form>
+    
+    <ul class="modal__footer">
+        <li>
+            e-mail:
+            <a href="mailto:derkachevigor1997@mail.ru">derkachevigor1997@mail.ru</a>
+        </li>
+    </ul>
+        </div><!-- /.modal__content -->
+    </div><!-- /.modal -->    
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
